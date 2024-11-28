@@ -1,0 +1,136 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Invoice</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<span>
+			<table >
+				<th class="mytable"><img src="logo.png" style="width: 150px; height: 100px;"></th><th class="mytable"><p>D-MARUTHI DRIVING SCHOOLS</p></th>
+			</table> 
+		</span>
+		<header>
+			<h1>Invoice</h1>
+			<p class="name">D-MARUTHI DRIVING SCHOOLS</p>
+			<address >
+				<br>
+				<P contenteditable>Whitefield Branch</P>
+				<p>No.85,'B' Ground Floor, Whitefield Main Road.</p>
+				<p>Near Whitefield Police station</p>
+				<p>Opp. St. Joseph School, Bangalore - 560066</p>
+				<p contenteditable>+91 91648 8113</p>
+				<p contenteditable>+91 91648 8113</p>
+			</address>
+			
+		</header>
+		<article>
+			<h1>Recipient</h1>
+			<address>
+			<label>Student Name : </label><p contenteditable>Enter Student Name</p> <br> <label>Contact No : </label> <p contenteditable>Enter Contact number</p>
+			</address>
+			<table class="meta">
+				<tr>
+					<th><span>Invoice No </span></th>
+					<td><span contenteditable>DMDS</span></td>
+				</tr>
+				<tr>
+					<th><span >Date</span></th>
+					<td><span><input type="date"></span></td>
+				</tr>
+				<tr>
+					<th><span >Amount Due</span></th>
+					<td><span id="prefix">₹</span><span>0.00</span></td>
+				</tr>
+			</table>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th><span >Vehicle Type</span></th>
+						<th><span >Course Type</span></th>
+						<th><span >Course Fee</span></th>
+						<th><span >Discount (%)</span></th>
+						<th><span >Total</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a class="cut">-</a><span >  <select name="cars" id="Dropdown" style = "border : 0px">
+    																	<option value="FLEXI">FLEXI</option>
+    																	<option value="BREZZA">BREZZA</option>
+    																	<option value="DEZIRE">DZIRE</option>
+    																	<option value="SWIFT">SWIFT</option>
+    																	<option value="SWIFT">BALENO</option>
+  																		</select></span></td>
+						<td><span >
+							
+							<select name="cars" id="Dropdown" style = "border : 0px">
+    																	<option value="BASIC">BASIC</option>
+    																	<option value="BASIC PREMIUM">BASIC PREMIUM</option>
+    																	<option value="PREMIUM PLUS">PREMIUM PLUS</option>
+    																	<option value="REFRESHER">REFRESHER</option>
+    																	<option value="REFRESHER">EXTRA CLASS</option>
+    																	<option value="REFRESHER">OWN CLASS</option>
+  																		</select></span></td>
+
+						</span></td>
+						<td><span data-prefix>₹</span><span contenteditable></span></td>
+						<td><span contenteditable>0.00</span></td>
+						<td><span data-prefix>₹</span><span>0.00</span></td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="add">+</a>
+			<table class="balance">
+				<tr>
+					<th><span  >Total</span></th>
+					<td><span data-prefix >₹</span><span>0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >Amount Paid</span></th>
+					<td><span data-prefix >₹</span><span contenteditable>0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >Amount Due</span></th>
+					<td><span data-prefix >₹</span><span>0.00</span></td>
+				</tr>
+			</table>
+					
+		</article>
+		<label style="padding: -15px ">Office Seal & Signature</label><label style="padding-left:370px ;">Customer's signature</label>
+		<aside>
+			<h1><span>Notes</span></h1>
+			<table style="font-family: sans-serif; font-size: 15px;" >
+					<thead style="padding-bottom: 2px;"><p style="text-decoration: underline; font-family:sans-serif;">Payment Details </p></thead>
+					<tr style="border:none;">
+						<td style="border:none;">
+
+						<label>Payment Type : </label><select name="cars" id="cars" style = "border : 0px">
+    							<option value="UPI">UPI</option>
+    							<option value="CREDIT CARD">CREDIT CARD</option>
+   								<option value="DEBIT CARD">DEBIT CARD</option>
+	  							<option value="CASH">CASH</option>
+								</select>
+  						</td>	
+						<td style="border:none;"><label>Transaction Id :</label><input type="text" style="border: none;">
+							 
+						</td>
+					</tr>
+				</table>
+				<p style="text-decoration: underline; font-family:sans-serif"; > 
+					Terms & conditions 
+				</p> <br>
+			<div>
+				<p class="adds"><label style="color: red;">*</label>  I understand that course is valid for 6 months only</p>
+				<p class="adds"><label style="color: red;">*</label>  Learner Licence and Driving Licence is depends on (RTO) Authority </p>
+				<p class="adds"><label style="color: red;">*</label>  Strictly no refund initiated</p>
+				<p class="adds"><input type="checkbox"> I agree to all terms and conditions</p>
+
+			</div>
+		</aside>
+
+	</body>
+</html>
